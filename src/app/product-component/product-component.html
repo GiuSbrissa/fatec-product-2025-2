@@ -4,11 +4,6 @@
     <form [formGroup]="formGroupProduct">
 
         <div class="mb-3">
-            <label for="inputId" class="form-label">Id</label>
-            <input formControlName="id" type="text" class="form-control" id="inputId">
-        </div>
-
-        <div class="mb-3">
             <label for="inputName" class="form-label">Nome</label>
             <input formControlName="name" type="text" class="form-control" id="inputName">
         </div>
@@ -25,7 +20,7 @@
        
         <button type="submit" class="btn btn-primary" (click)="save()" >Salvar</button>
     </form>
-    ~/.git-credentialsTotal de produtos: {{products.length}}
+    Total de produtos: {{products.length}}
     <table class="table">
         <thead>
           <tr>
